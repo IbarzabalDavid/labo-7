@@ -66,7 +66,9 @@ public class ArrayList <T> implements List<T>{
         if (index<=tailleList-1 && index>=0){
             while (i<tailleList-1-index){
                 tab[index+i]=tab[index+i+1];
+                i++;
             }
+            tailleList--;
         }
         else{
             System.out.println("Impossible");
