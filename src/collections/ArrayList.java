@@ -3,7 +3,7 @@ package collections;
 /**
  * Created by ibada1731710 on 2018-03-15.
  */
-public class ArrayList <T> {
+public class ArrayList <T> implements List<T>{
     private T[] tab=(T[]) new Object[10];
     private int tailleList=0;
     private int tailleTab=10;

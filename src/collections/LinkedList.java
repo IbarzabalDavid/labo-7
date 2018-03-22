@@ -3,7 +3,7 @@ package collections;
 /**
  * Created by Ibada1731710 on 2018-03-19.
  */
-public class LinkedList <T> {
+public class LinkedList <T> implements List<T>{
     private Node head;
     private Node tail;
     private int tailleList=0;
@@ -20,7 +20,7 @@ public class LinkedList <T> {
         tailleList++;
 
     }
-    public void add(T contenu, int index){
+    public void add( int index, T contenu){
         int i=0;
         if (index==0){
             Node tempo=new Node(contenu);

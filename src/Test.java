@@ -24,7 +24,7 @@ public class Test {
         listou.add("SSSSS");
         listou.add("SSSSS");
         listou.add("SSSSS");
-        listou.add("PPPP",2);
+        listou.add(2,"PPPP");
         System.out.println(listou.get(2));
 
     }
