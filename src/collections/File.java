@@ -20,7 +20,7 @@ public class File<T> {
     public void clear(){
         list.clear();
     }
-    public void size(){
-        list.size();
+    public int size(){
+        return list.size();
     }
 }

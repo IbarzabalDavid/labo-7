@@ -81,7 +81,11 @@ public class LinkedList <T> implements List<T>{
     }
     public void remove(int index){
         int i=0;
-        if (index<tailleList && index>=0){
+        if (index==0){
+            head=head.getNext();
+            tailleList--;
+        }
+        else if (index<tailleList && index>=0){
             Node tempo=head;
             while (i<index-1){
                 tempo=tempo.getNext();

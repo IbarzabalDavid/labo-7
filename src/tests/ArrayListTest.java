@@ -70,14 +70,32 @@ class ArrayListTest {
     void clear() {
         test.clear();
         assertEquals(0,test.size());
+        assertEquals(null,test.get(0));
 
     }
 
     @org.junit.jupiter.api.Test
     void remove() {
+        test.add("dd");
         test.remove(0);
         assertEquals("bb",test.get(0));
+        assertEquals(null,test.get(3));
+        test.remove(1);
+        assertEquals("dd",test.get(1));
         assertEquals(null,test.get(2));
+    }
+
+    @org.junit.jupiter.api.Test
+    void grow() {
+        test.add("4");
+        test.add("5");
+        test.add("6");
+        test.add("7");
+        test.add("8");
+        test.add("9");
+        test.add("10");
+        test.add("11");
+        assertEquals(11,test.size());
     }
 
 }
